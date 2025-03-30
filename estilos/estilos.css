@@ -62,10 +62,15 @@ h1,h2,h3 {
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border: none;
 }
 
 .boton:hover {
 background: var(--primario);
+}
+
+.boton:hover {
+    cursor: pointer;              /*SIRVE PARA COLOCARLE UN CURSOS MANO CUANDO PASAS SOBRE UN ENLACE*/
 }
 
 @media (min-width: 768px) {
@@ -199,4 +204,52 @@ border-radius: 1rem;         /*Esquinas redondeadas*/
     text-align: center;           /*ALINEA TU TEXTO AL CENTRO*/
     text-transform: uppercase;    /*HACE QUE TODO EL LEGEND SEA EN MAYUSCULA */
     margin-bottom: 2rem;
+}
+
+.contenedor-campos {
+
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input-text { 
+background-color: red;
+border: none;                             /*ME ELIMINA LOS BORDES*/
+padding: 1.5rem;
+border-radius: 1.5rem;                     /*ESQUINAS REDONDEADAS*/
+}
+
+.enviar .boton{
+    width: 100%;             /*LE DA EL ANCHO DEL 100% AL BOTON*/
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.w-sm-100{
+width: 100%;
+}
+
+.flex{
+display: flex;
+}
+
+.alinear-derecha{
+justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+    }
 }
