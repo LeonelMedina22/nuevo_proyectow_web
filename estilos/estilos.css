@@ -21,6 +21,7 @@ html {
 body {
     font-size: 16px;
     font-family: "Krub", sans-serif;
+    background-image:linear-gradient(to top, #dfe9f3 0%, var(--blanco) 100%) ;
 }
 
 h1 {
@@ -63,6 +64,10 @@ h1,h2,h3 {
     text-align: center;
 }
 
+.boton:hover {
+background: var(--primario);
+}
+
 @media (min-width: 768px) {
     .boton {
         width: auto;
@@ -85,8 +90,6 @@ h1,h2,h3 {
     }
 }
 
-
-
 .navegacion-principal a{
     padding: 1rem;
     color: var(--blanco);
@@ -106,6 +109,7 @@ color: var(--oscuro);
     background-size: cover;
     height: 450px;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido-hero {
@@ -127,4 +131,72 @@ justify-content: center;
 .ubicacion {
     display: flex;
     align-items: flex-end;
+}
+
+.sombra {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(112,112,112,0.54);
+-moz-box-shadow: 0px 0px 15px 0px rgba(112,112,112,0.54);
+box-shadow: 0px 0px 15px 0px rgba(112,112,112,0.54);
+background-color: var(--blanco);
+padding: 2rem;
+border-radius: 1rem;
+}
+
+
+@media (min-width: 768px) {
+   .servicios { 
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 1rem;
+}
+ }
+
+ .servicio {
+display: flex;
+flex-direction: column;
+align-items: center;
+ }
+
+ .servicio h3 {
+color: var(--secundario);
+font-weight: bold;
+ }
+
+ .servicio p {
+    line-height: 2;
+    text-align: center;
+ }
+
+.servicio .iconos {
+height: 15rem;
+width: 15rem;
+background-color: var(--primario);
+border-radius: 50%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+ }
+
+                                  /*CONTACTO*/
+
+.formulario {
+background-color: var(--gris);
+width: min(60rem, 100%);    /**Lo que hace min es tomar el valor mas pequeño**/
+margin: 0 auto;              /*Sirve para centrar  horizontalmente*/
+padding: 2rem;
+border-radius: 1rem;         /*Esquinas redondeadas*/
+} 
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    color: var(--primario);       /*LE DA COLOR A TU TEXTO*/
+    font-weight: bold;            /*HACE QUE TU TEXTO ESTE EN MAYUSCULA*/
+    font-size: 1.8rem;            /*LE DA TAMAÑO A TU TEXTO*/
+    text-align: center;           /*ALINEA TU TEXTO AL CENTRO*/
+    text-transform: uppercase;    /*HACE QUE TODO EL LEGEND SEA EN MAYUSCULA */
+    margin-bottom: 2rem;
 }
