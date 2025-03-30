@@ -22,7 +22,7 @@ body {
 .titulo {
     text-align: center;
     font-size: 3.8rem;
-    font-weight: 7@00;
+    font-weight: 700;
 }
 
 .titulo span{
@@ -30,7 +30,7 @@ body {
 }
 
 .contenedor { 
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -41,8 +41,16 @@ body {
 .navegacion-principal {
     display: flex;
         justify-content: space-between;
-    
+    flex-direction: column;
 }
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+    }
+}
+
+
 
 .navegacion-principal a{
     padding: 1rem;
@@ -57,18 +65,8 @@ body {
 color: var(--oscuro);
 }
 
-@media (min-width: 424px ) {
-    body {
-        background-color: blue;
-    }
-}
-
-@media (min-width: 768px) {
-    body {
-        background-color: var(--primario);
-    }
-}
-
-@media (min-width: 1) {
-    
+.hero {
+    background-image: url(../imagenes/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
